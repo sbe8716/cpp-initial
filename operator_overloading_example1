@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+class abc
+{
+    public:
+    int a;
+    void no()
+    {
+        cin>>a;
+    }
+    void out()
+    {
+        cout<<a<<endl;
+    }
+    void operator ==(abc t2)
+    {
+        if(a==t2.a)
+        {
+            cout<<"both objects are equal"<<endl;
+        }
+        else
+        {
+            cout<<"objects are not equal"<<endl;
+        }
+    }
+};
+
+main()
+{
+    abc t1,t2;
+    t1.no();
+    t1.out();
+    t2.no();
+    t2.out();
+    t1==t2;
+}
