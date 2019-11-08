@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,i;
+	cout<<"if you want to using Sbe8716 system®divisiox™ servise press 1"<<endl<<"for exit press zero"<<endl;
+	cin>>i;
+	
+	while(i!=0)
+	{
+		try
+		{
+			cout<<"no1";
+			cin>>a;
+			cout<<"no2";
+			cin>>b;
+			if(b==0) throw 0;
+			cout<<"div"<<a/b<<endl;
+		}
+		catch(int x)
+		{
+			cout<<"the divisiom is not possible"<<endl;
+		}
+		cout<<"do you want to continue press 1 otherwise press 0"<<endl;
+		cin>>i;
+	}
+	cout<<"thank You for using Sbe8716 system® divisiox™ servise";
+	return 0;
+}
